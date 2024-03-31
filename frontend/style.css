@@ -1,0 +1,425 @@
+/* Add your CSS styles here */
+
+
+
+/* Reset styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #000;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout styles */
+
+/* Layout styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Gap between items */
+   
+}
+
+
+
+.customization {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.color-dropdown {
+    position: relative;
+}
+
+.color-dropdown .color-options {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.color-dropdown .color-options {
+    display: block; /* Change 'active' to 'block' to match the class being toggled */
+}
+
+.color-dropdown .color-options.hidden {
+    display: none;
+}
+
+
+
+
+
+
+.options,
+.text-input,
+.size-style,
+.upload,
+.dimensions,
+.background-options,
+.texture,
+.logo-placement,
+.actions {
+    flex: 2;
+    flex-basis: calc(33.33% - 20px);
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: grid;
+    margin-top: -5px;
+   
+    
+}
+
+
+/* Text input, select, file input, number input styles */
+.text-input input,
+.size-style select,
+.dimensions input[type="number"],
+.background-options select,
+.upload,
+.texture select,
+.logo-placement input,
+.actions button {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px; /* Adjust padding */
+    margin-top: -40; /* Adjust margin */   
+}
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+
+
+/* Adjust width of input elements */
+
+
+
+
+
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+#previewCanvas {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.preview {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Increase the height */
+    max-width: calc(33.33% - 20px); /* Reduce the width */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+
+/* Add your CSS styles here */
+
+.brand-images {
+    margin-top: 20px;
+}
+
+.brand-images label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.brand-images select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.brand-images select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+
+/* CSS styles as before */
+
+@media screen and (max-width: 768px) {
+    /* Other styles for small screens */
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px; /* Gap between items */
+       
+        width: 100%; /* Set width to cover the entire screen */
+        max-width: none; /* Remove the maximum width limit */
+        height: auto; /* Change height to auto for responsiveness */
+        max-height: 300px; /* Limit the maximum height */
+    }
+
+    #previewCanvas {
+        width: 100%;
+        height: auto; /* Change height to auto for responsiveness */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for even smaller screens */
+}
+/* Add your CSS styles here */
+
+
+h2 {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text-input input,
+.size-style select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.customization {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+h2 {
+    margin-top: 0;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.size-style select,
+.background-options select,
+.texture select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" d="M9.293 13.293a1 1 0 0 1-1.414 0L4.586 9.879A1 1 0 0 1 5.999 8.464L9 11.464V3a1 1 0 1 1 2 0v8.464l3.414-3.414a1 1 0 1 1 1.414 1.414l-3.999 3.999a1 1 0 0 1-1.414 0l-3.999-3.999z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+
+
+#previewCanvas {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add other styles as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add your CSS styles here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
